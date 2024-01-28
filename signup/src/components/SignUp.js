@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import * as THREE from "three";
 import {
   Scene,
   PerspectiveCamera,
@@ -11,7 +12,7 @@ import {
   TextureLoader,
 } from "three";
 
-const ThreeScene = () => {
+const SignUp = () => {
   let scene, camera, renderer;
   let cloudParticles = [];
 
@@ -42,6 +43,8 @@ const ThreeScene = () => {
           map: texture,
           transparent: true,
         });
+
+        console.log("this part of the component was loaded");
 
         // Create cloud geometry
         let cloudGeo = new PlaneGeometry(500, 500);
@@ -79,7 +82,7 @@ const ThreeScene = () => {
 
     init();
 
-    // Clean up Three.js resources when the component unmounts
+    //  Clean up Three.js resources when the component unmounts
     return () => {
       if (renderer) {
         renderer.dispose();
@@ -87,7 +90,11 @@ const ThreeScene = () => {
     };
   }, []);
 
-  return <div />;
+  return (
+    <div className="page_content">
+      <h1>hello</h1>
+    </div>
+  );
 };
 
-export default ThreeScene;
+export default SignUp;
