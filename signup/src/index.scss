@@ -1,3 +1,52 @@
+// *,
+// *:before,
+// *:after {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box !important;
+// }
+
+// :root {
+//     --boxShadow: 0 3px 4px rgba(0, 0, 0, 0.566);
+//     --rubik: 'Rubik Mono One', monospace;
+//     --blackBG: rgba(32, 33, 36)
+// }
+
+// body{
+//     // margin:0;
+//     // overflow:hidden;
+//     // background-color: aqua;
+// }
+
+// // .page_content {
+// //     z-index: 1;
+// //     position: relative;
+// // }
+// #three-container {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     height:100%;
+//     width:100%;
+   
+//     /* This ensures that the Three.js canvas doesn't block interactions with elements behind it */
+// }
+
+// .page_content{
+//     height:100%;
+//     width:100%;
+// }
+
+
+
+
+// h1{
+//     border: 1px solid blue;
+// }
+
+
+
+
 *,
 *:before,
 *:after {
@@ -9,14 +58,35 @@
 :root {
     --boxShadow: 0 3px 4px rgba(0, 0, 0, 0.566);
     --rubik: 'Rubik Mono One', monospace;
-    --blackBG: rgb(32, 33, 36)
+    // --blackBG: rgba(32, 33, 36);
 }
 
-body{
-    margin:0;
-    overflow:hidden;
+body {
+    margin: 0;
+    overflow: hidden;
 }
 
+#three-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
 
+.page_content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
 
-
+h1 {
+    border: 1px solid blue;
+    color:white;
+}
