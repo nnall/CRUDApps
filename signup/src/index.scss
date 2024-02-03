@@ -61,32 +61,3 @@
     // --blackBG: rgba(32, 33, 36);
 }
 
-body {
-    margin: 0;
-    overflow: hidden;
-}
-
-#three-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-}
-
-.page_content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-}
-
-h1 {
-    border: 1px solid blue;
-    color:white;
-}
